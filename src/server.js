@@ -5,6 +5,7 @@ const subCatRouter = require('./routes/subCategoryRoute');
 const productRouter = require('./routes/productRoute');
 const managerRouter = require('./routes/managerRoute');
 const userRouter = require('./routes/userRoute');
+const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const authenticate = require('./middleware/authenticate');
 const setUserData = require('./middleware/setUserData');
@@ -25,6 +26,11 @@ app.set('views', 'src/views')
 app.use(express.static('public'));
 app.use(express.static('upload'));
 app.use(cookieParser());
+app.use(session({
+    secret: 'secret_Key',
+    resave: false,
+    saveUninitialized: false,
+}));
 
 // Middleware
 app.use(express.urlencoded({ extended: false }))
@@ -45,5 +51,5 @@ app.listen(PORT, (err) => {
     if (err) {
         console.log('server Not Start')
     }
-    console.log(`listing on port http://localhost:${PORT}`)
+    console.log(`Server : http://localhost:${PORT}`)
 })

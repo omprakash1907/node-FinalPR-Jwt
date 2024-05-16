@@ -10,7 +10,6 @@
     </title>
     <link rel="icon" href="/favicon.ico">
     <link href="/css/style.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body
@@ -39,57 +38,79 @@
             <!-- ===== Main Content Start ===== -->
             <main>
                 <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+                    <!-- Breadcrumb Start -->
+                    <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <h2 class="text-title-md2 font-bold text-black dark:text-white">
+                            OTP Verification
+                        </h2>
+
+                        <nav>
+                            <ol class="flex items-center gap-2">
+                                <li>
+                                    <a class="font-medium" href="/">Dashboard /</a>
+                                </li>
+                                <li class="font-medium text-primary">OTP</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- Breadcrumb End -->
 
                     <!-- ====== Add Product Section Start -->
                     <div class="flex justify-center">
                         <div class="flex col-span-2"></div>
-                        <div class="flex flex-col col-span-4  w-2/5">
+                        <div class="flex flex-col col-span-4  w-2/5" style="width: 50%;">
+                            <!-- Contact Form -->
                             <div
                                 class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                                 <div class="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
-                                    <h3 class="font-medium text-black text-3xl dark:text-white">
-                                        Login
+                                    <h3 class="font-medium text-black dark:text-white">
+                                        Verify OTP
                                     </h3>
                                 </div>
                                 <form action="" method="post">
                                     <div class="p-6.5">
+                                        <!-- <div class="mb-4.5 flex flex-col gap-6 xl:flex-row">
+                                            <div class="w-full ">
+                                                <label
+                                                    class="mb-3 block text-sm font-medium text-black dark:text-white">
+                                                    Manager's Name
+                                                </label>
+                                                <input type="text" name="name" placeholder="i.e, Virat Kohli"
+                                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                                                    required />
+                                            </div>
+                                        </div> -->
                                         <div class="mb-4.5 flex flex-col gap-6 xl:flex-row">
                                             <div class="w-full ">
                                                 <label
                                                     class="mb-3 block text-sm font-medium text-black dark:text-white">
-                                                    Email
+                                                    OTP
                                                 </label>
-                                                <input type="email" name="email" placeholder="Enter Your Email"
+                                                <input type="text" name="otp" placeholder="Enter OTP Here"
                                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                                                     required />
                                             </div>
                                         </div>
-                                        <div class="mb-4.5 flex flex-col gap-6 xl:flex-row">
+                                        <!-- <div class="mb-4.5 flex flex-col gap-6 xl:flex-row">
                                             <div class="w-full ">
                                                 <label
                                                     class="mb-3 block text-sm font-medium text-black dark:text-white">
                                                     Password
                                                 </label>
-                                                <input type="text" name="password" placeholder="Enter Your Password"
+                                                <input type="text" name="password" placeholder="i.e, ###"
                                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                                                     required />
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <button
                                             class="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray hover:bg-opacity-90">
-                                            Login
+                                            Verify OTP
                                         </button>
-                                        <p class="text-gray-500 mt-4"> Don't have an account? <a
-                                                class="text-sm text-blue-500 -200 hover:underline mt-4"
-                                                href="/user/signUp">SignUp</a></p>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <span>Admin : admin@gmail.com <br>
-                    Pass : 123
-                    </span>
                     <!-- ====== Add Product Section End -->
                 </div>
             </main>
@@ -99,6 +120,6 @@
     </div>
     <!-- ===== Page Wrapper End ===== -->
     <script defer src="/bundle.js"></script>
-</body>
+    </body>
 
-</html>
+    </html>

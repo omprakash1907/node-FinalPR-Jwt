@@ -48,6 +48,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "express": "^4.19.2",
+    "express-session": "^1.18.0",
     "filelist": "^1.0.4",
     "fill-range": "^7.0.1",
     "finalhandler": "^1.2.0",
@@ -103,6 +104,7 @@
     "ms": "^2.0.0",
     "multer": "^1.4.5-lts.1",
     "negotiator": "^0.6.3",
+    "nodemailer": "^6.9.13",
     "nodemon": "^3.1.0",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",
@@ -152,7 +154,6 @@
     "xtend": "^4.0.2",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
